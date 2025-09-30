@@ -988,7 +988,7 @@ html,body{
     top: 5rem;
     left: 0;
     width: 100vw;
-    background: #fff;
+    background: rgba(255,255,255,0.6); /* transparent white */
     box-shadow: 0 8px 24px rgba(0,0,0,0.08);
     z-index: 999;
     padding: 1.5rem 0;
