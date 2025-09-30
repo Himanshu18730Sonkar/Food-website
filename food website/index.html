@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="images/generated-image.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 <body>
     <div class="navbar-section">
@@ -15,7 +16,7 @@
             <div class="logo-imgage">
                 <img src="images/generated-image.png" alt="food" class="logo-img">
             </div>
-            <div class="navigation">
+            <div class="navigation" id="menu">
                 <ul>
                     <li><a href="#Home">Home</a></li>
                     <li><a href="#About">About</a></li>
@@ -30,7 +31,7 @@
                 <i class="fa-solid fa-heart"></i>
                 <i class="fa-solid fa-cart-shopping"></i>
             </div>
-            <div class="ham"><img src="images/hamburger-icon.png" alt="Menu" class="ham-menu"></div>
+              <div class="ham" id="ham"><img src="images/hamburger-icon.png" alt="Menu" class="ham-menu"></div>
         </div>
     </div>
     <div class="hero-home-section" id="Home">
@@ -40,7 +41,7 @@
                     <h1>Get Fresh <span>Food</span> in a Easy Way</h1>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quaerat eum ipsam odio quis sint quasi dolores voluptate quia enim. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita aliquam consectetur eum repudiandae modi ullam adipisci officiis vel alias vitae?</p>
-                <button class="order-btn">Order now <span>></span></button>
+                <button href="#Order" class="order-btn1">Order now <span>></span></button>
             </div>
             <div class="right-side-home">
                 <img src="images/burger.png" alt="burger" class="burger">
@@ -61,7 +62,7 @@
                 </div>
                 <h1>Why Choose Us?</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quaerat eum ipsam odio quis sint quasi dolores voluptate quia enim. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita aliquam consectetur eum repudiandae modi ullam adipisci officiis vel alias vitae?</p>
-                <button class="order-btn">Order now <span>></span></button>
+                <button class="order-btn2">Order now <span>></span></button>
             </div>
         </div>
 
@@ -75,7 +76,7 @@
                 </div>
             </div>
             <div class="menu-cards">
-                <div class="food-card">
+                <div class="food-card"  data-index = "1">
                     <div class="food-images">
                         <img src="images/burger2.jpg" alt="Burger" class="food-img">
                         <svg class="like-food" width="30" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -91,7 +92,7 @@
                         <button class="menu-card-btn">Order Now</button>
                     </div>
                 </div>
-                <div class="food-card">
+                <div class="food-card" data-index = "2">
                     <div class="food-images">
                         <img src="images/pata.jpg" alt="Pasta" class="food-img">
                         <svg class="like-food" width="30" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,7 +109,7 @@
                         <button class="menu-card-btn">Order Now</button>
                     </div>
                 </div>
-                <div class="food-card">
+                <div class="food-card" data-index = "3">
                     <div class="food-images">
                         <img src="images/isagna.jpg" alt="isagna" class="food-img">
                         
@@ -125,7 +126,7 @@
                         <button class="menu-card-btn">Order Now</button>
                     </div>
                 </div>
-                <div class="food-card">
+                <div class="food-card" data-index = "4">
                     <div class="food-images">
                         <img src="images/drink.jpg" alt="Drink" class="food-img">
                         
@@ -142,7 +143,7 @@
                         <button class="menu-card-btn">Order Now</button>
                     </div>
                 </div>
-                <div class="food-card">
+                <div class="food-card"  data-index = "5">
                     <div class="food-images">
                         <img src="images/pizza.jpg" alt="pizza" class="food-img">
                         
@@ -159,7 +160,7 @@
                         <button class="menu-card-btn">Order Now</button>
                     </div>
                 </div>
-                <div class="food-card">
+                <div class="food-card" data-index = "6">
                     <div class="food-images">
                         <img src="images/hot Dog.jpg" alt="hot Dog" class="food-img">
                         
@@ -176,7 +177,7 @@
                         <button class="menu-card-btn">Order Now</button>
                     </div>
                 </div>
-                <div class="food-card">
+                <div class="food-card" data-index = "7">
                     <div class="food-images">
                         <img src="images/juice.jpg" alt="juice" class="food-img">
                         
@@ -185,7 +186,7 @@
                                 />
                         </svg>
                     </div>
-                    <div class="card-text">
+                    <div class="card-text" >
                         <h1>Juice</h1>
                         <p>Lorem ipsum dolor sit amet.</p>
                         <h2>$5.00</h2>
@@ -193,7 +194,7 @@
                         <button class="menu-card-btn">Order Now</button>
                     </div>
                 </div>
-                <div class="food-card">
+                <div class="food-card"  data-index = "8">
                     <div class="food-images">
                         <img src="images/veg.jpg" alt="veg biryani" class="food-img">
                         
@@ -210,7 +211,7 @@
                         <button class="menu-card-btn">Order Now</button>
                     </div>
                 </div>
-                <div class="food-card">
+                <div class="food-card" data-index = "9">
                     <div class="food-images">
                         <img src="images/Cholocate.jpg" alt="Cholocate" class="food-img">
                         
@@ -227,7 +228,7 @@
                         <button class="menu-card-btn">Order Now</button>
                     </div>
                 </div>
-                <div class="food-card">
+                <div class="food-card" data-index = "10">
                     <div class="food-images">
                         <img src="images/ice cream.jpg" alt="ice cream" class="food-img">
                         
@@ -244,7 +245,7 @@
                         <button class="menu-card-btn">Order Now</button>
                     </div>
                 </div>
-                <div class="food-card">
+                <div class="food-card" data-index = "11">
                     <div class="food-images">
                         <img src="images/cupcake.jpg" alt="cupcake" class="food-img">
                         
@@ -261,7 +262,7 @@
                         <button class="menu-card-btn">Order Now</button>
                     </div>
                 </div>
-                <div class="food-card">
+                <div class="food-card" data-index = "12">
                     <div class="food-images">
                         <img src="images/sqandwich.jpg" alt="sandwich" class="food-img">
                         
@@ -438,23 +439,23 @@
                     <input type="text" id="number" class="order" placeholder="Your number">    
                 </div>
                 <div class="order-registeration">
-                    <label for="Your order">Your Order</label>
-                    <input type="text" id="your order" class="order" placeholder="Your order">
+                    <label for="your-order">Your Order</label>
+                    <input type="text" id="your-order" class="order" placeholder="Your order">
                 </div>
                 </div>
                 <div class="right-order-content">
                 <div class="order-registeration">
-                    <label for="your email">Email</label>
-                    <input type="email" id="your email" class="order" placeholder="Your Email">
+                    <label for="your-email">Email</label>
+                    <input type="email" id="your-email" class="order" placeholder="Your Email">
                 </div>
                 <div class="order-registeration">
-                    <label for="how much">How Much</label>
-                    <input type="number" min="1" max="infinite" id="how much" class="order" placeholder="How many Order">
+                    <label for="how-much">How Much</label>
+                    <input type="number" min="1" max="infinite" id="how-much" class="order" placeholder="How many Order">
 
                 </div>
                <div class="order-registeration">
-                   <label for="Your address">Address</label>
-                   <input type="text" id="your address" class="order" placeholder="Your Address">
+                   <label for="your-address">Address</label>
+                   <input type="text" id="your-address" class="order" placeholder="Your Address">
                </div>
                 </div>
             </div>
@@ -577,177 +578,7 @@
             <h1>Created By <span>Himanshu Sonkar</span></h1>
         </div>
     </div>
-    
-<script >
-    document.addEventListener('DOMContentLoaded',()=>{
-    const burger = document.querySelector('.order-btn1');
-    const salad = document.querySelector('.order-btn2');
-    const foodCard = document.querySelectorAll('.food-card');
-    const orderPage = document.getElementById('Order');
-    const menuCards = document.querySelector('.menu-cards');
-    const howMuch = document.getElementById('how-much');
-    const yourOrder = document.getElementById('your-order');
-    burger.addEventListener('click',()=>{
-        document.getElementById('Order').scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-            inline: 'nearest'
-        });
-        howMuch.value = 1;
-        yourOrder.value = "Burger";
-    })
-    salad.addEventListener('click',()=>{
-        orderPage.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-            inline: 'nearest'
-        });
-        howMuch.value = 1;
-        yourOrder.value = "Salad";
-    })
-    
-    menuCards.addEventListener('click', (e) => {
-        const card = e.target.closest('.food-card');
-        const index = Number(card.dataset.index);
-        if(e.target.tagName == "BUTTON"){
-            orderPage.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-                inline: 'nearest'
-            });
-        }
-        const foodName = card.querySelector('.card-text h1').textContent.trim();
-        howMuch.value = 1;
-        yourOrder.value = foodName;
-    
-    });
-   
+    <script src="index.js"></script>
 
-
-    
-  const section = document.querySelector('#Order');
-  const inputs = section.querySelectorAll('input.order');
-  const btn = section.querySelector('.order-btn-order-section');
-
-  // Create status message
-  const status = document.createElement('div');
-  status.setAttribute('role', 'status');
-  status.setAttribute('aria-live', 'polite');
-  Object.assign(status.style, {
-    display: 'none', marginTop: '12px', padding: '10px 12px',
-    borderRadius: '8px', background: '#e6ffed', color: '#03543f', fontWeight: '600'
-  });
-  const ok = document.createElement('button');
-  ok.type = 'button';
-  ok.textContent = 'OK';
-  Object.assign(ok.style, { marginLeft: '12px', padding: '6px 10px', borderRadius: '6px', cursor: 'pointer' });
-  status.appendChild(ok);
-  section.appendChild(status);
-
-  let timer;
-
-  // Select all direct children except the status message
-  const resContent = Array.from(section.children).filter(child => child !== status);
-
-  function show(msg, ms = 3000, center = false) {
-    // Remove any previous image
-    const oldImg = status.querySelector('img');
-    if (oldImg) oldImg.remove();
-
-    // Remove all text nodes except OK button
-    Array.from(status.childNodes).forEach(node => {
-      if (node !== ok && node.nodeName !== 'IMG') status.removeChild(node);
-    });
-
-    if (center) {
-      resContent.forEach(el => el.style.display = 'none');
-      Object.assign(status.style, {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        flexDirection: 'column',
-        textAlign: 'center',
-        width: '99%',
-        minHeight: '80vh',
-        fontSize: '2rem',
-        background: '#e6ffed',
-        position: 'relative'
-      });
-      status.classList.add('order-placed-animate');
-
-      // Add image for order placed
-      const img = document.createElement('img');
-      img.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Cd88qRLutTK9fbXIEND38Dk5gr5KmUDgcQ&s';
-      img.alt = 'Order Placed!';
-      img.style.width = '120px';
-      img.style.marginBottom = '24px';
-      status.insertBefore(img, ok);
-    } else {
-      resContent.forEach(el => el.style.display = '');
-      Object.assign(status.style, {
-        display: 'block',
-        width: '80%',
-        minHeight: '5%',
-        fontSize: '2rem',
-        background: '#e6ffed',
-        position: 'absolute',
-      });
-      status.classList.remove('order-placed-animate');
-    }
-
-    // Add the message text before OK button
-    status.insertBefore(document.createTextNode(msg), ok);
-
-    clearTimeout(timer);
-    timer = setTimeout(hideMsg, ms);
-  }
-
-  function hideMsg() {
-    status.style.display = 'none';
-    resContent.forEach(el => el.style.display = '');
-    status.classList.remove('order-placed-animate'); // Remove animation class
-  }
-
-  ok.addEventListener('click', () => { clearTimeout(timer); hideMsg(); });
-
-  function isEmpty(el) { return !el.value || el.value.trim() === ''; }
-  function mark(el, bad) {
-    el.style.border = bad ? '2px solid #ef4444' : '1px solid #d1d5db';
-    el.style.background = bad ? '#fee2e2' : '#fff';
-  }
-
-  btn.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    let firstBad = null;
-    let valid = true;
-
-    inputs.forEach(inp => {
-      const bad = isEmpty(inp);
-      mark(inp, bad);
-      if (bad && !firstBad) firstBad = inp;
-      valid = valid && !bad;
-    });
-
-    if (!valid) {
-      show('Please fill all fields.', 4000, false); // Don't hide content, show inline
-      firstBad?.focus();
-      return;
-    }
-
-    show('✅ Order is placed!', 3000, true); // Hide content, show centered message
-    // Optionally clear values:
-    // inputs.forEach(i => i.value = '');
-  });
-  
-});
-
-
-
-
-
-</script>
 </body>
-
 </html>
-
