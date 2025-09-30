@@ -143,7 +143,7 @@ html,body{
     font-size: 6rem;
 }
 
-.order-btn{
+.order-btn1 , .order-btn2{
     display: flex;
     align-items:center;
     gap: 10px;
@@ -155,10 +155,13 @@ html,body{
     width: fit-content;
     font-size: 1.5rem;
 }
-.order-btn span{
+.order-btn1 span, .order-btn2 span{
     position: relative;
 }
-.order-btn:hover span{
+.order-btn1:hover {
+    left: 8px;
+}
+.order-btn2:hover span{
     left: 8px;
 }
 .right-side-home{
@@ -956,5 +959,24 @@ html,body{
 }
 .creater-content span{
     color: var(--hover-and-text-color);
+}
+
+@keyframes orderPlacedPop {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.order-placed-animate {
+  animation: orderPlacedPop 0.7s cubic-bezier(.68,-0.55,.27,1.55);
 }
 
