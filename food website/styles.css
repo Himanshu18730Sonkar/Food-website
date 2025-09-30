@@ -979,4 +979,50 @@ html,body{
 .order-placed-animate {
   animation: orderPlacedPop 0.7s cubic-bezier(.68,-0.55,.27,1.55);
 }
+@media screen and (max-width:425px) {
+  .navigation.menu-open,
+  .media-images.menu-open {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100vw;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    z-index: 999;
+    padding: 1.5rem 0;
+    border-radius: 0 0 16px 16px;
+    align-items: flex-start;
+    gap: 0;
+  }
+  .navigation.menu-open ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .navigation.menu-open ul li {
+    width: 100%;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #eee;
+    font-size: 1.3rem;
+    background: none;
+  }
+  .navigation.menu-open ul li:last-child {
+    border-bottom: none;
+  }
+  .navigation.menu-open ul li a {
+    width: 100%;
+    display: block;
+    color: #222;
+    text-decoration: none;
+  }
+  .media-images.menu-open {
+    justify-content: flex-start;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+  }
+}
 
