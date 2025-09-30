@@ -578,8 +578,7 @@
             <h1>Created By <span>Himanshu Sonkar</span></h1>
         </div>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded',()=>{
+    <script>document.addEventListener('DOMContentLoaded',()=>{
     const burger = document.querySelector('.order-btn1');
     const salad = document.querySelector('.order-btn2');
     const foodCard = document.querySelectorAll('.food-card');
@@ -740,7 +739,27 @@
     // inputs.forEach(i => i.value = '');
   });
   
+  // Menu toggle for hamburger icon
+  const ham = document.querySelector('.ham');
+  const navigation = document.querySelector('.navigation');
+  const mediaImages = document.querySelector('.media-images');
+
+  ham.addEventListener('click', () => {
+    navigation.classList.toggle('menu-open');
+    mediaImages.classList.toggle('menu-open');
+  });
+
+
+  // Make all gallery buttons work
+  document.querySelectorAll('.gallary-btn').forEach(gallaryBtn => {
+    gallaryBtn.addEventListener('click', () => {
+      const orderSection = document.getElementById('Order');
+      orderSection?.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
 });
+
+
 
 
 
@@ -750,4 +769,5 @@
 
 </body>
 </html>
+
 
